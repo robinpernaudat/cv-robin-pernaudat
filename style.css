@@ -1,12 +1,7 @@
 html{
     background-color: rgb(40,0,40);
 }
-bodyold{
-
-    max-width: 1024px;
-    background-color: bisque;
-    border-radius: 20px;
-    padding: 0px;
+body{
 }
 
 App{

@@ -1,6 +1,7 @@
 
 const style={
-   
+   marginTop: '150px',
+   marginBottom: '150px',
 };
 
 export default class Motivation extends React.Component {

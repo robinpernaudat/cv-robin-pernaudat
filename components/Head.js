@@ -12,7 +12,7 @@ export default class Head extends React.Component {
       this.state = { liked: false };
     }
     render(){return (<div style={style}>
-        <h1 style={{margin: "0px", verticalAlign: 'middle',}}>Ingénieur en informatique et robotique.</h1>
+        <h1 style={{margin: "0px", verticalAlign: 'middle',paddingLeft: '7px',}}>Ingénieur en informatique et robotique</h1>
         <div style={{textAlign: 'center', verticalAlign: 'middle',}}><i >Chef de projet en informatique et robotique (Bac +5)</i></div>
       </div>);}
 }

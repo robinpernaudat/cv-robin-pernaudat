@@ -6,7 +6,7 @@ const l_style={
   marginLeft: 'auto',
   marginRight: 'auto',
   padding: '10px',
-  maxWidth: '1440px',
+  maxWidth: '1024px',
   backgroundColor: 'bisque',
   borderRadius: "25px",
   

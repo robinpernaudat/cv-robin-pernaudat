@@ -1,10 +1,10 @@
 
 const style={
-    width: '40%',
+    width: "660px",
     minHeight: "200px",
     border: 'solid 1px #100010',
     color:'#100010',
-    boxShadow: '10px 5px 5px #100010',
+    boxShadow: '7px 5px 5px #100010',
     padding: "5px",
     margin: "0px",
     display: 'flex',
