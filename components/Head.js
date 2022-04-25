@@ -1,9 +1,18 @@
+
+const style={
+  textAlign: 'center',
+  verticalAlign: 'middle',
+  width: '60%',
+  paddingTop: '90px',
+};
+
 export default class Head extends React.Component {
     constructor(props) {
       super(props);
       this.state = { liked: false };
     }
-    render(){return (<span style={{margin: '0px auto 0px auto '}}>
-      <h1>Robin PERNAUDAT</h1>
-      <div><i style={{margin: '0px auto 0px auto '}}>Ingénieur en informatique et robotique.</i></div></span>);}
+    render(){return (<div style={style}>
+        <h1 style={{margin: "0px", verticalAlign: 'middle',}}>Ingénieur en informatique et robotique.</h1>
+        <div style={{textAlign: 'center', verticalAlign: 'middle',}}><i >Chef de projet en informatique et robotique (Bac +5)</i></div>
+      </div>);}
 }
