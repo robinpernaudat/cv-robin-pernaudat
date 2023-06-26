@@ -1,9 +1,10 @@
 html{
-    background-color: rgb(40,0,40);
+    background-color: rgb(56, 2, 13);
 }
 body{
 }
 
 App{
-    background-color: bisque;
+    background-color: rgb(1, 93, 129);
+    color:rgb(239, 241, 241);
 }
