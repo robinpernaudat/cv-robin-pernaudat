@@ -2,8 +2,9 @@
 
 
 [tasks."0-build"]
+dir="{{cwd}}/edit"
 description = "Compile le projet React"
-run = "npm run build && cp -f dist/index.html ./index.htm"
+run = "npm run build && cp -rf dist/* ../"
 sources = ["src/**/*"]
 
 [tasks."1-serve"]
