@@ -1,0 +1,11 @@
+[tools]
+
+
+[tasks."0-build"]
+description = "Compile le projet React"
+run = "npm run build"
+sources = ["src/**/*"]
+
+[tasks."1-serve"]
+description = "Compile et lance nginx en local"
+run = "npm run nginx:prepare && npm run build && npm run nginx:start"
