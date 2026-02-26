@@ -4,7 +4,7 @@
 [tasks."0-build"]
 dir="{{cwd}}/edit"
 description = "Compile le projet React"
-run = "npm run build && cp -rf dist/* ../"
+run = "npm run build && cp -rf dist/* ../ && mv ../index.html ../index.htm"
 sources = ["src/**/*"]
 
 [tasks."1-serve"]
