@@ -5,7 +5,7 @@
 dir="{{cwd}}/edit"
 description = "Compile le projet React"
 run = "npm run build && cp -rf dist/* ../ && mv ../index.html ../index.htm"
-sources = ["src/**/*"]
+sources = ["edit/src/**/*"]
 
 [tasks."1-serve"]
 description = "Compile et lance nginx en local"
