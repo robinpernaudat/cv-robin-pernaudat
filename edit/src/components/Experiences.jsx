@@ -9,10 +9,10 @@ const experiences = [
     highlights: [
       "Mise en place de l'infrastructure IT, du serveur de supervision Rust et des outils de management des robots.",
       "Développement de logiciels en C++/Qt5 et Rust (supervision, tâches de fond, synchronisation, collecte de logs, alertes).",
-      "Conception d'algorithmes robotiques (PID pression, évitement limites mécaniques, recalage d'avatar 3D) et pilotage du bras Kuka LBR Med.",
+      "Conception d'algorithmes robotiques et intelligence artificielle (PID pression, évitement limites mécaniques, recalage d'avatar 3D) et pilotage du bras Kuka LBR Med.",
       "Architecture réseau des systèmes (MQTT, échanges sérialisés), prototypage de cartes électroniques ESP32 et suivi de production.",
       "Pilotage de la plateforme https://www.iyu.care et du site e-commerce https://store.iyu.care.",
-    ],
+    ], 
   },
   {
     period: "11-2019 à 06-2020",
