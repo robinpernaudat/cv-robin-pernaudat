@@ -11,8 +11,8 @@ export default function App() {
 
         <div className="space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
           <FormationWidget />
-          <Experiences />
           <AutoApprentissage />
+          <Experiences />
         </div>
       </section>
     </main>
