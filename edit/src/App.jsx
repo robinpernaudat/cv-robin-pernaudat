@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import FormationWidget from "./components/FormationWidget";
 import Experiences from "./components/Experiences";
+import AutoApprentissage from "./components/AutoApprentissage";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <div className="space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
           <FormationWidget />
           <Experiences />
+          <AutoApprentissage />
         </div>
       </section>
     </main>
