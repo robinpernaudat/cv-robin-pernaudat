@@ -1,10 +1,10 @@
 export default function AutoApprentissage() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-800 sm:text-xl">Divers</h2>
+      <h2 className="text-lg font-semibold text-slate-800 sm:text-xl">Apprentissage autodidacte</h2>
       <div className="mt-4 space-y-3">
         <article className="rounded-xl border border-slate-200 bg-white p-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Apprentissage autodidacte</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Expérimentation personnelle</p>
           <p className="mt-2 text-sm text-slate-700">
             J'ai expérimenté le déploiement d'IA on-premise ainsi que l'automatisation de tâches et de processus.
           </p>
