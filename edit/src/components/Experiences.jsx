@@ -4,8 +4,8 @@ const experiences = [
   {
     period: "06-2020 à aujourd'hui",
     period_us: "06-2020 - Present",
-    title: "Ingénieur robotique & informatique",
-    title_us: "Robotics & software engineer",
+    title: "Tech lead R&D, architecte robotique et système d'information",
+    title_us: "Tech lead R&D, robotics architect et SI",
     company: "Capsix Robotique",
     context: "Conception d'un système de massage robotisé et de sa plateforme logicielle.",
     context_us: "Design of a robotic massage system and of its software platform.",

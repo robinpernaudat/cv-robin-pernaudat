@@ -19,7 +19,7 @@ export default function App() {
         <Header lang={lang} onToggleLanguage={toggleLanguage} />
 
         <div className="space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
-          <FormationWidget lang={lang} />
+          <FormationWidget lang={lang} /> 
           <AutoApprentissage lang={lang} />
           <Experiences lang={lang} />
         </div>

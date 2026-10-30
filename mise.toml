@@ -4,9 +4,23 @@
 [tasks."0-build"]
 dir="{{cwd}}/edit"
 description = "Compile le projet React"
-run = "npm run build --force && cp -rf dist/* ../ "
+run = "npm run build  && cp -rf dist/* ../ "
 sources = ["edit/src/**/*"]
 
 [tasks."1-serve"]
 description = "Compile et lance nginx en local"
-run = "npm run nginx:prepare && npm run build && npm run nginx:start"
+run = [
+    {task="nginx:prepare"},
+    {task="nginx:start"},
+]
+
+
+[tasks."nginx:prepare"]
+run = "mkdir -p .nginx/client_temp .nginx/proxy_temp .nginx/fastcgi_temp .nginx/uwsgi_temp .nginx/scgi_temp"
+
+[tasks."nginx:start"]
+run = "nginx -p . -c nginx.local.conf"
+
+[tasks."nginx:stop"]
+run = "nginx -p . -c nginx.local.conf -s stop"
+

@@ -48,7 +48,7 @@ export default function AutoApprentissage({ lang = "fr" }) {
           <p className="mt-2 text-sm text-slate-700">{content.experiment.description}</p>
           <p className="mt-2 text-sm text-slate-700">{content.experiment.details}</p>
           <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-700">
-            {content.experiment.points.map((point) => (
+            {content.experiment.points.map((point) => (   //
               <li key={point}>{point}</li>
             ))}
           </ul>
