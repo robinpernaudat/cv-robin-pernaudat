@@ -1,9 +1,9 @@
 const autoApprentissage = {
-  title: "Apprentissage autodidacte",
-  title_us: "Autodidactic learning",
+  title: "Expertises récentes et divers",
+  title_us: "New areas of Expertise and Miscellaneous",
   experiment: {
-    label: "Expérimentation personnelle",
-    label_us: "Personal experimentation",
+    label: "Apprentissage autodidacte et expérimentations",
+    label_us: "Autodidactic learning",
     description: "J'ai expérimenté le déploiement d'IA on-premise ainsi que l'automatisation de tâches et de processus.",
     description_us: "I have experimented with the deployment of on-premise AI as well as the automation of tasks and processes.",
     details: "Cette démarche personnelle me permet de confronter des scénarios de déploiement d'IA et des solutions d'automatisation à des environnements concrets, en dehors de mes missions professionnelles.",
@@ -11,10 +11,12 @@ const autoApprentissage = {
     points: [
       "Expérimentation du déploiement d'IA on-premise.",
       "Automatisation de tâches et de workflows.",
+      "IA physique (robotique)",
     ],
     points_us: [
       "Experimented with the deployment of on-premise AI.",
       "Automation of tasks and workflows.",
+      "Physical AI (Robotics)",
     ],
   },
 };
@@ -26,6 +28,7 @@ const getContent = (lang) => {
 
   return {
     ...autoApprentissage,
+    title: autoApprentissage.title_us,
     experiment: {
       ...autoApprentissage.experiment,
       label: autoApprentissage.experiment.label_us,
