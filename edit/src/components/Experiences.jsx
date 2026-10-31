@@ -28,8 +28,8 @@ const experiences = [
   {
     period: "11-2019 à 06-2020",
     period_us: "11-2019 - 06-2020",
-    title: "Co-fondateur technique",
-    title_us: "Technical co-founder",
+    title: "Fondateur / CEO",
+    title_us: "CEO",
     company: "VDSP (Vos Données Sous Protection)",
     context: "Création d'entreprise en période Covid.",
     context_us: "Creation of a company during the Covid period.",
