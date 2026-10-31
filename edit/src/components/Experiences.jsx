@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
@@ -221,26 +222,51 @@ const getExperiences = (lang) =>
       }))
     : experiences;
 
-export default function Experiences({ lang = "fr" }) {
+export default function Experiences({ lang = "fr", alwaysVisibleCount = 5 }) {
+  const [isOpen, setIsOpen] = useState(false);
   const content = getExperiences(lang);
+  const visibleExperiences = content.slice(0, alwaysVisibleCount);
+  const collapsibleExperiences = content.slice(alwaysVisibleCount);
+  const isEnglish = lang === "en";
+  const toggleLabel = isOpen ? (isEnglish ? "Close" : "Replier") : isEnglish ? "Expand" : "Voir plus";
+
+  const renderExperience = (experience) => (
+    <ExperienceCard
+      key={`${experience.period}-${experience.company}`}
+      period={experience.period}
+      title={experience.title}
+      company={experience.company}
+      context={experience.context}
+      highlights={experience.highlights}
+    />
+  );
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6">
       <h2 className="text-lg font-semibold text-slate-800 sm:text-xl">
-        {lang === "en" ? "Professional experiences" : "Expériences professionnelles"}
+        {isEnglish ? "Professional experiences" : "Expériences professionnelles"}
       </h2>
       <div className="mt-4 space-y-3">
-        {content.map((experience) => (
-          <ExperienceCard
-            key={`${experience.period}-${experience.company}`}
-            period={experience.period}
-            title={experience.title}
-            company={experience.company}
-            context={experience.context}
-            highlights={experience.highlights}
-          />
-        ))}
+        {visibleExperiences.map(renderExperience)}
+        {collapsibleExperiences.length > 0 ? (
+          <div id="collapsible-experiences" className="space-y-3" hidden={!isOpen}>
+            {collapsibleExperiences.map(renderExperience)}
+          </div>
+        ) : null}
       </div>
+      {collapsibleExperiences.length > 0 ? (
+        <div className="mt-4 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setIsOpen((current) => !current)}
+            className="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-600"
+            aria-expanded={isOpen}
+            aria-controls="collapsible-experiences"
+          >
+            {toggleLabel}
+          </button>
+        </div>
+      ) : null}
     </section>
   );
 }

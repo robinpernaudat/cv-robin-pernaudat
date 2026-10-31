@@ -21,7 +21,7 @@ export default function App() {
         <div className="space-y-6 text-base leading-relaxed text-slate-700 sm:text-lg">
           <FormationWidget lang={lang} /> 
           <AutoApprentissage lang={lang} />
-          <Experiences lang={lang} />
+          <Experiences lang={lang} alwaysVisibleCount={5} />
         </div>
       </section>
     </main>
