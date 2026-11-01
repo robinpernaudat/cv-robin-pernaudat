@@ -12,6 +12,7 @@ const experiences = [
     context_us: "Design of a robotic massage system and of its software platform.",
     highlights: [
       "Choix techniques et mise en place de l'infrastructure IT, du serveur de supervision Rust et des outils de management des robots.",
+      "Passage du prototype à l'industrialisation",
       "Développement de logiciels en C++/Qt5 et Rust (supervision, tâches de fond, synchronisation, collecte de logs, alertes).",
       "Conception d'algorithmes robotiques et intelligence artificielle (PID pression, évitement limites mécaniques, recalage d'avatar 3D) et pilotage du bras Kuka LBR Med.",
       "Choix d'architecture robotique et mise en oeuvre (MQTT, échanges sérialisés), prototypage de cartes électroniques ESP32 et suivi de production.",
@@ -19,6 +20,7 @@ const experiences = [
     ],
     highlights_us: [
       "Technical choices and setup of the IT infrastructure, the Rust supervision server and the robot management tools.",
+      "Transition from Prototype to Industrialization",
       "Development of software in C++/Qt5 and Rust (supervision, background tasks, synchronization, log collection, alerts).",
       "Design of robotic algorithms and artificial intelligence (pressure PID, mechanical limit avoidance, 3D avatar recalibration) and control of the Kuka LBR Med arm.",
       "Selection and implementation of the robotics architecture (MQTT, serialized exchanges), prototyping of ESP32 electronic boards and production tracking.",
