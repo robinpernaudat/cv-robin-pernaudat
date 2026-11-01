@@ -17,6 +17,7 @@ const experiences = [
       "Conception d'algorithmes robotiques et intelligence artificielle (PID contrôle de pression, évitement limites mécaniques, recalage d'avatar 3D) et pilotage du bras Kuka LBR Med.",
       "Choix d'architecture robotique et mise en oeuvre, prototypage de cartes électroniques ESP32 et suivi de production.",
       "Choix et développement de la platefrome (backend) avec la collecte des données.",
+      "Project management et management pluridisciplinaire",
       "Stack technique : HTML5, JavaScript, C/C++, Qt5, SQLite, Mariadb, Rust, Windows, Linux/CentOS, synchronisation BDD, MQTT, Kinect Azure, robot Kuka LBR Med",
     ],
     highlights_us: [
@@ -26,6 +27,7 @@ const experiences = [
       "Design of robotic algorithms and artificial intelligence (pressure control PID, mechanical limit avoidance, 3D avatar recalibration) and control of the Kuka LBR Med arm.",
       "Selection and implementation of the robotics architecture, prototyping of ESP32 electronic boards and production tracking.",
       "Selection and development of the backend platform, including data collection.",
+      "Project management and multidisciplinary Engineering Leadership",
       "Technical stack : HTML5, JavaScript, C/C++, Qt5, SQLite, Mariadb, Rust, Windows, Linux/CentOS, DB Sync, MQTT, Kinect Azure, Kuka LBR Med robot",
     ],
   },
